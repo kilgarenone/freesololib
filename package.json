@@ -1,0 +1,23 @@
+{
+  "name": "freesolo",
+  "version": "0.0.1",
+  "type": "module",
+  "source": "src/freesolo.js",
+  "exports": {
+    "require": "./dist/freesolo.cjs",
+    "default": "./dist/freesolo.modern.js"
+  },
+  "main": "./dist/freesolo.cjs",
+  "module": "./dist/freesolo.module.js",
+  "unpkg": "./dist/freesolo.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "devDependencies": {
+    "microbundle": "^0.14.2"
+  },
+  "dependencies": {
+    "mermaid": "^8.14.0"
+  }
+}
